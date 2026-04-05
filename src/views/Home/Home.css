@@ -1,0 +1,89 @@
+/* PAGE WRAPPER */
+.home { 
+  padding: 30px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+
+/* GRID LAYOUT */
+.grid {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(460px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+
+/* FLOWER CARD */
+.flower-card {
+  background-color: rgb(255, 250, 245);
+  border: 1px solid #d4c7b1;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+/* HOVER EFFECT */
+.flower-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* IMAGE BOX */
+.flower-img-box {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 14px 14px 0 0;
+}
+
+/* PERFECT IMAGE FIT */
+.flower-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .3s ease;
+}
+
+/* ZOOM ON HOVER */
+.flower-card:hover img {
+  transform: scale(1.08);
+}
+
+/* CONTENT */
+.flower-content {
+  padding: 18px;
+}
+
+/* TITLE */
+.flower-card h2 {
+  font-size: 22px;
+  margin: 5px 0 8px;
+  color: #5a3610;
+  font-weight: 600;
+}
+
+/* DESCRIPTION */
+.flower-card p {
+  font-size: 14px;
+  color: #6f5434;
+  margin-bottom: 6px;
+}
+
+/* PRICE */
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #8B4513;
+  margin-top: 10px;
+  text-shadow: 0px 1px 2px rgba(139,69,19,0.2);
+}
+
+/* FADE ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
