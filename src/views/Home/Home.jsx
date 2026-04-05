@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+
 import "./Home.css";
 import Bodyconatiner from "../../components/Bodycontainer/Bodycontainer";
 import Flowercard from "../../components/Flowercard/Flowercard";
