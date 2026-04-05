@@ -25,6 +25,8 @@ const Navconfig = [
   },
 ];
 
+
+
 function Navbar() {
   return (
     <nav className="navbar">
